@@ -12,7 +12,7 @@
 <link rel="icon" href="assets/emma-gold-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #111111;
@@ -31,7 +31,7 @@
   body {
     background-color: var(--bg);
     color: var(--fg);
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     font-weight: 300;
     min-height: 100vh;
     position: relative;
@@ -89,7 +89,7 @@
   }
 
   .site-title h2 {
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     font-weight: 300;
     font-size: 45px;
     line-height: 1em;
@@ -155,8 +155,12 @@
 </div>
 
 <footer class="site-footer">
-  <p><span>&copy; EMMAGOLD 2025 Desir&egrave; S.r.l. - Piazza A. Volta, 24/25 - 52041 Civitella in Val di Chiana (AR) - Phone +39 0575 295584 <a href="mailto:info@desiregioielli.com">info@desiregioielli.com</a> - Copyright COLOR SERVICE</span></p>
+  <p><span>&copy; EMMAGOLD <span id="current-year">2025</span> Desir&egrave; S.r.l. - Piazza A. Volta, 24/25 - 52041 Civitella in Val di Chiana (AR) - Phone +39 0575 295584 <a href="mailto:info@desiregioielli.com">info@desiregioielli.com</a> - Copyright <a href="https://www.colorservice.it" target="_blank" rel="noopener">COLOR SERVICE</a></span></p>
 </footer>
+
+<script>
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
